@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -21,41 +20,30 @@
   <body>
     <!-- ****************************************main-menu******************************************** -->
     <section id="first">
-        <div id="yak1" class="wrapper-main-menu">
+        <div class="wrapper-main-menu">
           <img class="main-img" src="img/main-menu/menu-logo.png" alt="">
           <nav class="main-menu">
             <ul>
-              <a href="#yak7">
-                <li class="main-menu__item main-menu__contacts">
-                  контакты
-                </li>
-              </a>
-              <a href="#yak2">
-                <li class="main-menu__item main-menu__showcase">
-                  витрина
-                </li>
-              </a>
-              <a href="#yak3">
-                <li class="main-menu__item main-menu__about-us">
-                  о нас
-                </li>
-              </a>
-              <a href="#yak6">
-                <li class="main-menu__item main-menu__operating-procedure">
-                  порядок<br>работы
-                </li>
-              </a>
-              <a href="#yak5">
-                <li class="main-menu__item main-menu__advantage">
-                  наши<br>
-                  преимущества
-                </li>
-              </a>
-              <a href="#yak4">
-                <li class="main-menu__item main-menu__portfolio">
-                  портфолио
-                </li>
-              </a>
+              <li class="main-menu__item main-menu__contacts">
+                контакты
+              </li>
+              <li class="main-menu__item main-menu__showcase">
+                витрина
+              </li>
+              <li class="main-menu__item main-menu__about-us">
+                о нас
+              </li>
+              <li class="main-menu__item main-menu__operating-procedure">
+                порядок<br>
+                работы
+              </li>
+              <li class="main-menu__item main-menu__advantage">
+                наши<br>
+                преимущества
+              </li>
+              <li class="main-menu__item main-menu__portfolio">
+                портфолио
+              </li>
             </ul>
           </nav>
         </div>
@@ -63,36 +51,18 @@
      <!-- main-menu end -->
      <!-- sidebar start -->
     <div class="sidebar">
-      <a href="#yak1">
-        <div class="sidebar__img">
-          <img src="img/sidebar/домик.png" alt="Главная" title="Главная">
-        </div>
-      </a>
-      <a href="#yak2">
-        <div class="sidebar__img">
-          <img src="img/sidebar/витрина.png" alt="Витрина" title="Витрина">
-        </div>
-      </a>
-      <a href="#yak3">
-        <div class="sidebar__img">
-          <img src="img/sidebar/о-нас.png" alt="О нас" title="О нас">
-        </div>
-      </a>
-      <div class="sidebar__img">
-        <img src="img/sidebar/портфолио.png" alt="Портфолио" title="Портфолио">
-      </div>
-      <div class="sidebar__img">
-        <img src="img/sidebar/преимущества.png" alt="Преимущества" title="Портфолио">
-      </div>
-      <div class="sidebar__img">
-        <img src="img/sidebar/порядок-работы.png" alt="Порядок работы" title="Порядок работы">
-      </div>
+      <div class="sidebar__img"></div>
+      <div class="sidebar__img"></div>
+      <div class="sidebar__img"></div>
+      <div class="sidebar__img"></div>
+      <div class="sidebar__img"></div>
+      <div class="sidebar__img"></div>
     </div>
 
      <!-- sidebar end -->
      <!-- ************************************************showcase start*************************************************** -->
     <section id="second">
-      <div id="yak2" class="showcase">
+      <div class="showcase">
         <h2 class="showcase-title">Витрина <hr><hr><hr></h2>
         <!-- showcase__block start -->
           <div class="showcase__block">
@@ -240,7 +210,7 @@
       <!-- ********************showcase end******************* -->
     </section>
     <section id="third">
-      <div id="yak3" class="about-us">
+      <div class="about-us">
         <h2 class="about-us-title">О нас<hr><hr><hr></h2>
         <div class="about-us__navigation">
           <div class="about-us__navigation-title">
@@ -314,32 +284,14 @@
         </div>
     </section>
     <section class="fourth">
-      <div id="yak4" class="portfolio">
+      <div class="portfolio">
         
       </div>
     </section>
-    <section id="yak7" class="footer">
+    <section class="footer">
       
     </section>
-    <!-- ***************** анимация якорей ************* -->
-    <script type="text/javascript">
-    $(function(){
-            $("a[href^='#']").click(function(){
-                    var _href = $(this).attr("href");
-                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-                    return false;
-            });
-    });
-    </script>
-    <script type="text/javascript">
-      $('a[href^="#"]').click(function () { 
-       elementClick = $(this).attr("href");
-      destination = $(elementClick).offset().top;
-      {
-      $('html,body').animate( { scrollTop: destination }, 1000);
-      } 
-      return false;﻿ 
-    </script>
+
     <!-- sidebar-script start -->
     <script type="text/javascript">
       $(function() {
@@ -561,6 +513,8 @@
         var slider = multiItemSlider('.about-us__slider')
 
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script>  
       $(document).ready(function(){
