@@ -1,0 +1,22 @@
+.sidebar {
+  float: right;
+  margin-top: 155px;
+  margin-right: 58px;
+  z-index: 5;
+}
+.sidebar .sidebar__img {
+  cursor: pointer;
+  width: 74px;
+  height: 75px;
+  border: 3px solid #afd2d3;
+  border-radius: 50%;
+  margin-top: 10px;
+  background: #e3e6de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar.fixed {
+  position: fixed;
+  right: 0px;
+}

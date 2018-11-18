@@ -1,21 +1,829 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<div class="p">
-		robot solo gues
-	</div>
-	<hr>
-	<hr>
-	<hr>
-	<hr>
-	<hr>
-	<hr>
-	<hr>
-	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum laboriosam, dolorum quidem pariatur illo, natus! Accusantium vel quaerat, quos minus neque dignissimos laborum voluptas, quasi est beatae quisquam eaque, voluptatum eum non, necessitatibus. Laboriosam molestiae est, sunt, perspiciatis magnam beatae cum veritatis, rerum consectetur eligendi incidunt natus inventore autem earum qui pariatur animi voluptas facilis! Neque sapiente minus dolorum totam sint, provident sit autem similique expedita, atque aliquam cum at adipisci modi pariatur suscipit, velit, reiciendis qui aspernatur tempora! Odit tempora, possimus doloremque natus eveniet eius reiciendis aperiam deserunt vitae?</p>
-</body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>DAVYDOVA</title>
+  </head>
+  <body>
+    <!-- ****************************************main-menu******************************************** -->
+    <section id="first">
+        <div id="yak1" class="wrapper-main-menu">
+          <img class="main-img" src="img/main-menu/menu-logo.png" alt="">
+          <nav class="main-menu">
+            <ul>
+              <a href="#yak7">
+                <li class="main-menu__item main-menu__contacts">
+                  контакты
+                </li>
+              </a>
+              <a href="#yak2">
+                <li class="main-menu__item main-menu__showcase">
+                  витрина
+                </li>
+              </a>
+              <a href="#yak3">
+                <li class="main-menu__item main-menu__about-us">
+                  о нас
+                </li>
+              </a>
+              <a href="#yak6">
+                <li class="main-menu__item main-menu__operating-procedure">
+                  порядок<br>работы
+                </li>
+              </a>
+              <a href="#yak5">
+                <li class="main-menu__item main-menu__advantage">
+                  наши<br>
+                  преимущества
+                </li>
+              </a>
+              <a href="#yak4">
+                <li class="main-menu__item main-menu__portfolio">
+                  портфолио
+                </li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+    </section>
+     <!-- main-menu end -->
+     <!-- sidebar start -->
+    <div class="sidebar">
+      <a href="#yak1">
+        <div class="sidebar__img">
+          <img src="img/sidebar/домик.png" alt="Главная" title="Главная">
+        </div>
+      </a>
+      <a href="#yak2">
+        <div class="sidebar__img">
+          <img src="img/sidebar/витрина.png" alt="Витрина" title="Витрина">
+        </div>
+      </a>
+      <a href="#yak3">
+        <div class="sidebar__img">
+          <img src="img/sidebar/о-нас.png" alt="О нас" title="О нас">
+        </div>
+      </a>
+      <a href="#yak4">
+        <div class="sidebar__img">
+          <img src="img/sidebar/портфолио.png" alt="Портфолио" title="Портфолио">
+        </div>
+      </a>
+      <a href="#yak5">
+        <div class="sidebar__img">
+          <img src="img/sidebar/преимущества.png" alt="Преимущества" title="Преимущества">
+        </div>
+      </a>
+      <a href="#yak6">
+        <div class="sidebar__img">
+          <img src="img/sidebar/порядок-работы.png" alt="Порядок работы" title="Порядок работы">
+        </div>
+      </a>
+    </div>
+
+     <!-- sidebar end -->
+     <!-- ************************************************showcase start*************************************************** -->
+    <section id="second">
+      <div id="yak2" class="showcase">
+        <h2 class="showcase-title">Витрина <hr><hr><hr></h2>
+        <!-- showcase__block start -->
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/razrabotka-firmennogo-stilya.png" alt="">
+            <div class="showcase__text">
+              <h3>разработка фирменного<br>стиля</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+            </div>
+            <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/разработка логотипа.png" alt="">
+            <div class="showcase__text">
+              <h3>разработка логотипа</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+            </div>
+            <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/дизайн полиграфии.png" alt="">
+            <div class="showcase__text">
+              <h3>дизайн полиграфии</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/брендирование объектов.png" alt="">
+            <div class="showcase__text">
+              <h3>брендирование объектов</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/дизайн наружной рекламы.png" alt="">
+            <div class="showcase__text">
+              <h3>дизайн наружной рекламы</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/дизайн под ключ.png" alt="">
+            <div class="showcase__text">
+              <h3>дизайн под ключ</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/дизайн сайта.png" alt="">
+            <div class="showcase__text">
+              <h3>дизайн сайта</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/дизайн упаковки.png" alt="">
+            <div class="showcase__text">
+              <h3>дизайн упаковки</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/оформление соцсетей.png" alt="">
+            <div class="showcase__text">
+              <h3>оформление соцсетей</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/создание анимационных роликов.png" alt="">
+            <div class="showcase__text">
+              <h3>создание анимационных роликов</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+          <div class="showcase__block">
+            <img src="img/showcase/img-for-showcase/big/создание гайдбука.png" alt="">
+            <div class="showcase__text">
+              <h3>создание гайдбука</h3>
+              <p>Фирменный стиль подчеркнёт образ Вашей компании, а также создаст у клиента ассоциации с Вашим брендом. Для создания фирменного стиля мы подробно изучаем направления деятельности Вашей компании и компаний-конкурентов, чтобы выделить Вас и обеспечить представительный вид среди других. В данную услугу входит разработка дизайна для фирменных бланков, визиток, конвертов, папок, сувенирной продукции и т.д.</p>
+              <a href="#">Заказать</a>
+              <div class="showcase__comment">* Стоимость каждого проекта расчитывается индивидуально и предоставляется вместе с коммерческим предложением.</div>
+            </div>
+          </div>
+        <!-- showcase__block end -->
+        <!-- showcase__slider start -->
+        <div class="showcase__slider">
+          <div class="showcase__slider__wrapper">
+            <div class="showcase__slider__item tabs-links">
+              <img class="img-one" src="img/showcase/img-for-showcase/circle-color/firmenniy-stil.png" title='Фирменный стиль'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/razrabotka-logotipa.png" title='Разработка логотипа'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/disain-poligrafii.png" title='Дизайн полиграфии'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/brendirovanie-obertov.png" title='Брендирование объектов'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/дизайн наружной рекламы.png" title='Дизайн наружной рекламы'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/дизайн под ключ.png" title='Дизайн под ключ'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/дизайн сайта.png" title='Дизайн сайта'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/дизайн упаковки.png" title='Дизайн упаковки'>
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/оформление соцсетей.png" title="Оформление соцсетей">
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/создание анимационного ролика.png" title="Создание анимационного ролика">
+            </div>
+            <div class="showcase__slider__item tabs-links">
+              <img src="img/showcase/img-for-showcase/circle-color/создание гайдбука.png" title="Создание гайдбука">
+            </div>
+          </div>
+          <a class="showcase__slider__control showcase__slider__control_left" role="button"><img src="img/arrow.png" alt=""></a>
+          <a class="showcase__slider__control showcase__slider__control_right showcase__slider__control_show" role="button"><img src="img/arrow.png" alt=""></a>
+        </div>
+        <!-- showcase__slider end  -->
+      </div>
+      <!-- ********************showcase end******************* -->
+    </section>
+    <!-- **************** about us start *********************** -->
+    <section id="third">
+      <div id="yak3" class="about-us">
+        <h2 class="about-us-title">О нас<hr><hr><hr></h2>
+        <div class="about-us__navigation">
+          <div class="about-us__navigation-title">
+            наша команда
+          </div>
+        </div>
+        <div class="about-us__slider">
+          <div class="about-us__slider-item">
+            <img src="img/о-нас/ПАВЕЛ.png" alt="">
+            <p>
+              Павел<br>
+              Исполнительный<br>
+              директор
+            </p>
+          </div>
+          <div class="about-us__slider-item">
+           <img src="img/о-нас/АЛЕКСАНДР.png" alt="">
+           <p>
+             Александр<br>
+             Веб-<br>
+             разработчик
+           </p>
+          </div>
+          <div class="about-us__slider-item">
+           <img src="img/о-нас/ЕКАТЕРИНА.png" alt="">
+           <p>
+             Екатерина<br>
+             Главный<br>
+             дизайнер
+           </p>
+          </div>
+          <div class="about-us__slider-item">
+           <img src="img/о-нас/ДИАНА.png" alt="">
+           <p>
+             Диана<br>
+             Кто-то
+           </p>
+          </div>
+          <div class="about-us__slider-item">
+            <img src="img/о-нас/АЛЕСЬ.png" alt="">
+            <p>
+              Алесь<br>
+              Кто-то
+            </p>
+          </div>
+        </div>
+        <!-- about-us__slider end -->
+        <div class="about-us__text">
+          <div class="about-us__text-quote">
+            “ЛЮДИ ИГНОРИРУЮТ<br>
+            ДИЗАЙН, КОТОРЫЙ<br>
+            ИГНОРИРУЕТ ЛЮДЕЙ”
+            <p>Фрэнк Химеро</p>
+          </div>
+          <div class="about-us__text-main">
+            DavydovaDesign - студия современного графического дизайна. 
+            Наша задача - делать не просто красивый и стильный дизайн,
+            а ещё и продающий и функциональный. Любой элемент дизайна,
+            будь то фирменный стиль,  логотип, сайт и т.п. - является не только обложкой компании, но и инструментом для осуществления успешных продаж. Качественный дизайн влияет на подсознание потребителя и побуждает его совершить покупку, заказ и т.д.
+            То же касается и более практичных моментов в дизайне.
+            Например, сайт с удобным интерфейсом, но с высокими ценами
+            на услуги/товары привлечёт больше клиентов, чем сайт
+            с неудобным, хоть цены там будут и ниже.
+
+            Мы стараемся заглянуть в голову к потребетилям, изучить преимущества конкурентов и на основе полученных выводов сделать для Вас современный, стильный, практичный, работающий дизайн. Мы следуем современным тенденциям дизайна
+            и совершенствуемся вместе с ними. Наша цель - помочь Вам
+            в развитии Вашего бизнеса с помощью инструментов дизайна.
+            А также мы заинтересованы сделать вклад в конкурентноспособность компаний впринципе,
+            так как это приводит к общему прогрессу любой цивилизации.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- **************** portfolio start *********************** -->
+    <section id="fourth">
+      <div id="yak4" class="portfolio">
+        <h2 class="portfolio-title">Портфолио <hr><hr><hr></h2>
+        <div class="portfolio-slider">
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              баннер GUICE
+            </div>
+            <img src="img/картинки-портфолио/карточки/баннер-GUICE.png" alt="zfdsfdsf">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              фирменный стиль SPRACHEN
+            </div>
+            <img src="img/картинки-портфолио/карточки/фирменный-стиль-SPRACHEN.png" alt="sdasd">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              логотип BERESTA
+            </div>
+            <img src="img/картинки-портфолио/карточки/логотип-BERESTA.png" alt="sdasd">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              дизайн для альбома фортепианной музыки
+            </div>
+            <img src="img/картинки-портфолио/карточки/дизайн-для-альбома-фортепианной-музыки.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              буклет БИОФЛОРЕКС
+            </div>
+            <img src="img/картинки-портфолио/карточки/буклет-БИОФЛОРЕКС.png" alt="dsfds">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              календарь ИЗОТОПНЫЕ ТЕХНОЛОГИИ
+            </div>
+            <img src="img/картинки-портфолио/карточки/календарь-ИЗОТОПНЫЕ-ТЕХНОЛОГИИ.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              логотип Invictus
+            </div>
+            <img src="img/картинки-портфолио/карточки/логотип-Invictus.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              логотип и фирменный стиль МЕШОК ПОДАРКОФФ
+            </div>
+            <img src="img/картинки-портфолио/карточки/логотип-и-фирменный-стиль-МЕШОК-ПОДАРКОФФ.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              логотип для сайта знакомств
+            </div>
+            <img src="img/картинки-портфолио/карточки/логотип-для-сайта-знакомств.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              фирменный стиль ROUND&FRESH
+            </div>
+            <img src="img/картинки-портфолио/карточки/фирменный-стиль-ROUND&FRESH.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              брендирование стадиона ФК СИТИ
+            </div>
+            <img src="img/картинки-портфолио/карточки/брендирование-стадиона-ФК-СИТИ.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              упаковка RHINO
+            </div>
+            <img src="img/картинки-портфолио/карточки/упаковка-RHINO.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              БЕЛВИТГРАС
+            </div>
+            <img src="img/картинки-портфолио/карточки/БЕЛВИТГРАС.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              логотип и сайт ДОСТОЙНАЯ ЖИЗНЬ
+            </div>
+            <img src="img/картинки-портфолио/карточки/логотип-и-сайт-ДОСТОЙНАЯ-ЖИЗНЬ.png" alt="">
+          </div>
+          <div class="portfolio-slider__item">
+            <div class="portfolio-slider__item-text">
+              заставки ГУМ
+            </div>
+            <img src="img/картинки-портфолио/карточки/заставки-ГУМ.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- **************** advantages start ********************* -->
+    <section id="fifth">
+      <div id="yak5" class="advantages">
+       <h2 class="advantages-title">Наши<br>Преимущества<hr><hr><hr></h2>
+        <div class="advantages__content">
+          <div class="advantages__content-title">
+            Профессиональная консультация
+          </div>
+          <div class="advantages__content-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laboriosam excepturi illo cumque temporibus dolor accusamus officia blanditiis dolorem a mollitia ut amet velit, libero, ab accusantium aliquid alias omnis dolores quos recusandae. Sint optio fugiat soluta architecto culpa.
+          </div>
+        </div>
+        <div class="advantages__content">
+          <div class="advantages__content-title">
+            Дизайн под ключ
+          </div>
+          <div class="advantages__content-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur cum aperiam non officiis ipsa illo dolorum sit facere sequi blanditiis reprehenderit dolorem quibusdam magni, ut quia at, nostrum, recusandae id a ipsam quae ratione quam. Odit possimus, natus cupiditate ex accusamus veritatis, sunt porro amet quis assumenda beatae ab cum nobis fugiat similique a repudiandae minima ipsam voluptatibus iusto maiores?
+          </div>
+        </div>
+        <div class="advantages__content">
+          <div class="advantages__content-title">
+            Система бонусов
+          </div>
+          <div class="advantages__content-text">
+            У нас предусмотрена гибкая система скидок для постоянных клиентов. Обращаясь 
+            к нам за услугами повторно, Вы можете получить скидку до 10%. 
+            Кроме этого существует система скидок для крупныхзаказов и заказов комплексов услуг. А так же, каждый клиент по окончании проекта получит приятный дизайнерский подарок от нашей студии.
+          </div>
+        </div>
+        <div class="advantages__icons">
+          <div class="advantages__icons-block">
+            <div class="advantages__icons-block_circle">
+              <img class="dialogue-icon rubberBand1" src="img/наши-преимущества/значок_диалог.png" alt="">
+            </div>
+            Профессиональная<br>консультация
+          </div>
+          <div class="advantages__icons-block">
+            <div class="advantages__icons-block_circle">
+              <img class="key-icon rubberBand2" src="img/наши-преимущества/значок_ключ.png" alt="">
+            </div>
+            Дизайн<br>под ключ
+          </div>
+          <div class="advantages__icons-block">
+            <div class="advantages__icons-block_circle">
+              <img class="present-icon rubberBand3" src="img/наши-преимущества/значок_подарок_голубой.png" alt="">
+            </div>
+            Система <br>бонусов
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- ***************** operating-procedure start ********** -->
+    <section id="sixth">
+      <div id="yak6" class="o-p">
+        <h2 class="o-p-title">ПОРЯДОК <br>РАБОТЫ<hr><hr><hr></h2>
+        <div class="o-p__list">
+          <div class="o-p__list-item">
+            <div class="o-p__list-item__number">
+              1
+            </div>
+            <div class="o-p__list-item__title">
+              ПРОФЕССИОНАЛЬНАЯ<br>
+              КОНСУЛЬТАЦИЯ
+            </div>
+            <div class="o-p__list-item__text">
+              Перед началом сотрудничества
+              проконсультируем по любым
+              интересующим Вас вопросам.
+              Поможем определиться
+              с выбором услуг.
+            </div>
+          </div>
+          <div class="o-p__list-item">
+            <div class="o-p__list-item__number">
+              2
+            </div>
+            <div class="o-p__list-item__title">
+              ОФОРМЛЕНИЕ<br>
+              ЗАКАЗА
+            </div>
+            <div class="o-p__list-item__text">
+              Брифование. Составление
+              технического задания.
+              Утверждение индивидуального
+              порядка работ соответственно
+              сделанному заказу.
+              Составление договора.
+              Предоплата.
+            </div>
+          </div>
+          <div class="o-p__list-item">
+            <div class="o-p__list-item__number">
+              3
+            </div>
+            <div class="o-p__list-item__title">
+              ПРЕЗЕНТАЦИЯ<br>
+              КОНЦЕПЦИИ
+            </div>
+            <div class="o-p__list-item__text">
+              Разработка дизайн-концепции
+              для Вашего проекта. Презентация
+              проделанной работы.
+              Утверждение концепции.
+              Подписание промежуточного
+              акта приёмки работ.
+            </div>
+          </div>
+          <div class="o-p__list-item">
+            <div class="o-p__list-item__number">
+              4
+            </div>
+            <div class="o-p__list-item__title">
+              ДОРАБОТКА<br>
+              ПРОЕКТА
+            </div>
+            <div class="o-p__list-item__text">
+              Адаптация утверждённой
+              концепции под необходимые
+              элементы соответственно
+              объёмам заказанных работ.
+              Внесение корректировок. 
+            </div>
+          </div>
+          <div class="o-p__list-item">
+            <div class="o-p__list-item__number">
+              5
+            </div>
+            <div class="o-p__list-item__title">
+              ПРЕЗЕНТАЦИЯ<br>
+              ГОТОВОГО ПРОЕКТА
+            </div>
+            <div class="o-p__list-item__text">
+              Презентация и окончательное
+              утверждение готового проекта.
+              Подписание акта приёмки.
+              Полная оплата проекта.
+            </div>
+          </div>
+          <div class="o-p__list-item">
+            <div class="o-p__list-item__number">
+              6
+            </div>
+            <div class="o-p__list-item__title">
+              ИЗГОТОВЛЕНИЕ,<br>
+              ПЕЧАТЬ
+            </div>
+            <div class="o-p__list-item__text">
+              Изготовление и печать
+              необходимых элементов
+              дизайна. Составление
+              и подписание документов
+              на изготовление. Оплата.
+            </div>
+          </div>
+        </div>
+        <!-- ********* o-p__list end ****** -->
+        <div class="o-p__comment">
+          * В данном разделе указан примерный порядок работы.<br>
+          Он может изменяться в индивидуальном порядке согласно <br>особенностям проекта
+        </div>
+      </div> 
+    </section>
+    <section id="seventh">
+      <div id="yak7" class="contacts">
+        <h2 class="contacts-title">Контакты<hr><hr><hr></h2>
+        <div class="invert-form">
+          <div class="invert-form__text">
+            Вы можете оставить заявку,<br>
+            заполнив форму ниже,<br>
+            и наш сотрудник свяжется с Вами
+          </div>
+          <form class="invert-form__element" method="POST" action="">
+            <input type="text" name="" placeholder="Имя" required>
+            <input type="email" name="" placeholder="E-mail" required>
+            <input type="tel" name="name" placeholder="+375 (__) ___ __ __" required>
+            <input type="text" name="name" placeholder="Оператор" required>
+            <button class="invert-form__element-btn" type="submit">Отправить</button> 
+          </form>
+          <div class="invert-form__text">
+            или  свяжитесь с нами любым другим<br>
+            удобным для Вас способом:
+          </div>
+        </div>
+        <div class="contacts__list">
+          <div class="contacts__list-left">
+            <div class="contacts__list-item">
+              тел. velcom: +375 44  5923843
+            </div>
+            <div class="contacts__list-item">
+              тел. МТС: +375 29 7479861
+            </div>
+            <div class="contacts__list-item">
+              e-mail: info@dadesign.by
+            </div>
+          </div>
+          <div class="contacts__list-right">
+            <div class="contacts__list-item">
+              viber: +375 44 5923843
+            </div>
+            <div class="contacts__list-item">
+              skype: +375447777777
+            </div>
+            <div class="contacts__list-item">
+              watsup: +375 44 5923843
+            </div>
+          </div>
+        </div>
+        <div class="contacts__icons">
+          <a class="contacts__icons-item" href="#"><img src="img/контакты/Fc.png" alt=""></a>
+          <a class="contacts__icons-item" href="#"><img src="img/контакты/vk.png" alt=""></a>
+          <a class="contacts__icons-item" href="#"><img src="img/контакты/inst.png" alt=""></a>
+          <a class="contacts__icons-item" href="#"><img src="img/контакты/be.png" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <!-- **************** footer start ******************** -->
+    <section class="footer">
+      <div class="footer-wrapper">
+        <div class="legal-information">
+          ИП Давыдова Е.Ю. <br>
+          УНП 192649673 от 16 мая 2016г. <br>
+          Юридический и почтовый адрес: 220068, г. Минск, ул. Гая, д. 9, кв.1
+        </div>
+        <div class="schedule">
+          Время работы: ПН-ПТ с 10.00 до 18.00 <br>
+          Время приёма звонков: ЕЖЕДНЕВНО с 10.00 до 20.00
+        </div>
+      </div>
+    </section>
+    <!-- ***************** анимация якорей ************* -->
+    <script type="text/javascript">
+    $(function(){
+            $("a[href^='#']").click(function(){
+                    var _href = $(this).attr("href");
+                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                    return false;
+            });
+    });
+    </script>
+
+    <!-- sidebar-script start -->
+    <script type="text/javascript">
+      $(function() {
+        var $window = $(window);
+        var $sidebar = $(".sidebar");
+        var $sidebarTop = $sidebar.position().top;
+        var $sidebarHeight = $sidebar.height();
+        var $footer = $('.footer');
+        var $footerTop = $footer.position().top;
+       
+        $window.scroll(function(event) {
+          $sidebar.addClass("fixed");
+          var $scrollTop = $window.scrollTop();
+          var $topPosition = Math.max(0, $sidebarTop - $scrollTop);
+           
+          if ($scrollTop + $sidebarHeight > $footerTop) {
+            var $topPosition = Math.min($topPosition, $footerTop - $scrollTop - $sidebarHeight);
+          }
+       
+          $sidebar.css("top", $topPosition);
+        });
+      });
+    </script>
+    <!-- sidebar-script end -->
+    <!-- появление большой картинки при клике на круглую-script -->
+    <script type="text/javascript">
+     var links = document.querySelectorAll('.showcase__slider__item');
+     var content = document.querySelectorAll('.showcase__block');
+     for(var i=0; i <links.length; i++) {
+         (function(i) {
+            var link = links[i];
+            link.onclick = function() {
+                for(var j=0; j <content.length; j++) {
+                   var opacity = window.getComputedStyle(content[j]).opacity;
+                   if(opacity == "1") {
+                      content[j].style.opacity = "0";
+                   }
+                }
+             content[i].style.opacity = "1";
+             }
+         })(i);
+     } 
+    </script>
+    <!-- showcase__slider-script start -->
+    <script type="text/javascript">
+        'use strict';
+        var multiItemSlider = (function () {
+          return function (selector, config) {
+            var
+              _mainElement = document.querySelector(selector), // основный элемент блока
+              _sliderWrapper = _mainElement.querySelector('.showcase__slider__wrapper'), // обертка для .slider-item
+              _sliderItems = _mainElement.querySelectorAll('.showcase__slider__item'), // элементы (.slider-item)
+              _sliderControls = _mainElement.querySelectorAll('.showcase__slider__control'), // элементы управления
+              _sliderControlLeft = _mainElement.querySelector('.showcase__slider__control_left'), // кнопка "LEFT"
+              _sliderControlRight = _mainElement.querySelector('.showcase__slider__control_right'), // кнопка "RIGHT"
+              _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+              _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+              _positionLeftItem = 0, // позиция левого активного элемента
+              _transform = 0, // значение транфсофрмации .slider_wrapper
+              _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+              _items = []; // массив элементов
+            // наполнение массива _items
+            _sliderItems.forEach(function (item, index) {
+              _items.push({ item: item, position: index, transform: 0 });
+            });
+
+            var position = {
+              getMin: 0,
+              getMax: _items.length - 1,
+            }
+
+            var _transformItem = function (direction) {
+              if (direction === 'right') {
+                if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+                  return;
+                }
+                if (!_sliderControlLeft.classList.contains('showcase__slider__control_show')) {
+                  _sliderControlLeft.classList.add('showcase__slider__control_show');
+                }
+                if (_sliderControlRight.classList.contains('showcase__slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+                  _sliderControlRight.classList.remove('showcase__slider__control_show');
+                }
+                _positionLeftItem++;
+                _transform -= _step;
+              }
+              if (direction === 'left') {
+                if (_positionLeftItem <= position.getMin) {
+                  return;
+                }
+                if (!_sliderControlRight.classList.contains('showcase__slider__control_show')) {
+                  _sliderControlRight.classList.add('showcase__slider__control_show');
+                }
+                if (_sliderControlLeft.classList.contains('showcase__slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+                  _sliderControlLeft.classList.remove('showcase__slider__control_show');
+                }
+                _positionLeftItem--;
+                _transform += _step;
+              }
+              _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+            }
+
+            // обработчик события click для кнопок "назад" и "вперед"
+            var _controlClick = function () {
+              var direction = this.classList.contains('showcase__slider__control_right') ? 'right' : 'left';
+              _transformItem(direction);
+            };
+
+            var _setUpListeners = function () {
+              // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+              _sliderControls.forEach(function (item) {
+                item.addEventListener('click', _controlClick);
+              });
+            }
+
+            // инициализация
+            _setUpListeners();
+
+            return {
+              right: function () { // метод right
+                _transformItem('right');
+              },
+              left: function () { // метод left
+                _transformItem('left');
+              }
+            }
+
+          }
+        }());
+
+        var slider = multiItemSlider('.showcase__slider')
+
+      </script>
+
+
+    <script type="text/javascript">
+     var linkss = document.querySelectorAll('.advantages__icons-block');
+     var contentt = document.querySelectorAll('.advantages__content');
+     for(var k=0; k <linkss.length; k++) {
+         (function(k) {
+            var link = linkss[k];
+            link.onclick = function() {
+                for(var l=0; l <contentt.length; l++) {
+                   var opacity = window.getComputedStyle(contentt[l]).opacity;
+                   if(opacity == "1") {
+                      contentt[l].style.opacity = "0";
+                   }
+                }
+             contentt[k].style.opacity = "1";
+             }
+         })(k);
+     } 
+    </script>
+    <script src="slick/slick.min.js"></script>
+    <script type="text/javascript">  
+      $(document).ready(function(){
+        $('.about-us__slider').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<img class="about-us__navigation-prevArrow" src="img/arrow.png">',
+          nextArrow: '<img class="about-us__navigation-nextArrow" src="img/arrow.png">'
+        });
+      });
+    </script>
+  </body>
 </html>
