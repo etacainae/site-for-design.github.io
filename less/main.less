@@ -10,10 +10,15 @@ body {
 	color: #040404;
 	margin: 0px auto;
 	max-width: 1920px;
-	background: url(../img/main-fon.png) top center no-repeat;
+}
+
+.paralax-effect {
+	height: 100%;
+	background: grey url(../img/main-fon-min.png) center center no-repeat;
 }
 
 #first {
+	margin: 0 auto;
 	height: 942px;
 }
 
@@ -24,7 +29,19 @@ body {
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
-	transform: translateX(-50%)
+	transform: translateX(-50%);
+}
+
+
+.logo-gif {
+	position: absolute;
+	width: 191px;
+	height: 201px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .main-menu {
@@ -50,37 +67,37 @@ body {
 	&__contacts {
 		left: -127px;
 		top: 187px;
-		background: url(../img/main-menu/contacts.png) center center no-repeat;
+		background: url(../img/main-menu/contacts-min.png) center center no-repeat;
 	}	
 
 	&__showcase {
 		left: 141px;
 		top: 33px;
-		background: url(../img/main-menu/vitrina.png) center center no-repeat;
+		background: url(../img/main-menu/vitrina-min.png) center center no-repeat;
 	}
 
 	&__about-us {
 		left: 408px;
 		top: 188px;
-		background: url(../img/main-menu/o-nas.png) center center no-repeat;
+		background: url(../img/main-menu/o-nas-min.png) center center no-repeat;
 	}
 
 	&__operating-procedure {
 		left: -127px;
 		top: 495px;
-		background: url(../img/main-menu/poryadok-raboti.png) center center no-repeat;
+		background: url(../img/main-menu/poryadok-raboti-min.png) center center no-repeat;
 	}
 
 	&__advantage {
 		left: 141px;
 		top: 649px;
-		background: url(../img/main-menu/preimushestva.png) center center no-repeat;
+		background: url(../img/main-menu/preimushestva-min.png) center center no-repeat;
 	}
 
 	&__portfolio {
 		left: 408px;
 		top: 496px;
-		background: url(../img/main-menu/portfolio.png) center center no-repeat;
+		background: url(../img/main-menu/portfolio-min.png) center center no-repeat;
 	}
 
 }
@@ -92,13 +109,13 @@ body {
 // showcase
 
 #second {
-	background: url(../img/showcase/showcase-fon.png) center center no-repeat;
+	background: url(../img/showcase/showcase-fon-min.png) center center no-repeat;
 	height: 944px;
 }
 
 .showcase {
 	position: relative;
-	background: url(../img/showcase/all-fons.png) center center no-repeat;
+	background: url(../img/showcase/all-fons-min.png) center center no-repeat;
 	width: 870px;
 	height: 871px;
 	padding-top: 37px;
@@ -186,47 +203,35 @@ body {
 
 .showcase__slider__wrapper {
 	display: flex;
+	justify-content: space-around;
 	transition: transform 0.6s ease;
 }
 
 .showcase__slider__item {
-	flex: 0 0 33.333333%;
-	max-width: 33.333333%;
-	text-align: center;
 	img {
+		margin: 0 auto;
 		border: 3px solid #98cfd3;
 		border-radius: 50%;
 		cursor: pointer;
 	}
 }
 
-.showcase__slider__control {
-	z-index: 99;
-	position: absolute;
-	top: 50%;
-	display: none;
-	align-items: center;
-	justify-content: center;
+.showcase__navigation-prevArrow {
+	margin: auto 0; 
 	width: 23px;
 	height: 23px;
-	text-align: center;
-	transform: translateY(-50%);
 	cursor: pointer;
-}
-
-.showcase__slider__control_show {
-	display: flex;
-}
-
-
-.showcase__slider__control_left {
-	left: 0;
 	transform: rotate(180deg);
 }
 
-.showcase__slider__control_right {
-	right: 0;
+.showcase__navigation-nextArrow {
+	margin: auto 0;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
 }
+
+
 // showcase end
 // about-us start
 #third {
@@ -235,7 +240,7 @@ body {
 
 .about-us {
 	position: relative;
-	background: url(../img/о-нас/фон.png) center center no-repeat;
+	background: url(../img/о-нас/фон-min.png) center center no-repeat;
 	width: 892px;
 	height: 892px;
 	border: 3px solid #fcfafa;
@@ -265,6 +270,7 @@ body {
 	}
 }
 // ******** about-us slider start *******
+
 .about-us__slider {
 	position: relative;
 	top: 176px;
@@ -288,6 +294,7 @@ body {
 		}
 	}
 }
+
 .about-us__navigation-prevArrow {
 	position: relative;
 	width: 23px;
@@ -387,13 +394,12 @@ body {
 
 #fifth {
 	height: 945px;
-	background-color: #a0d1d2;
 	padding-top: 22px;
 }
 
 .advantages {
 	position: relative;
-	background: url(../img/наши-преимущества/подложка-под-раздел-КРУГ.png) center center no-repeat;
+	background: url(../img/наши-преимущества/подложка-под-раздел-КРУГ-min.png) center center no-repeat;
 	width: 892px;
 	height: 892px;
 	border: 3px solid #fcfafa;
@@ -525,20 +531,28 @@ body {
 
 // ПОРЯДОК РАБОТЫ start
 #sixth {
-	background-color: #e3e6de;
+	margin: 0 auto;
+	background: url(../img/порядок-работы/подложка-раздела-min.png) center center no-repeat;
 	height: 944px;
+	padding-top: 37px;
 }
 
 .o-p {
-	background: url(../img/порядок-работы/подложка-раздела.png) center center no-repeat;
-	height: 944px;
-	padding-top: 50px;
-	&-title {
+	margin: 0 auto;
+	background-color: #e3e6de;
+	z-index: 1;
+	border-radius: 50%;
+	height: 870px;
+	width: 870px;
+	padding-top: 20px;
+	&-title {;
 		text-align: center;
 		.title
 	}
 	&__list {
 		margin: 0 auto;
+		overflow: hidden;
+	    z-index: 2;
 		width: 870px;
 		display: flex;
 		flex-wrap: wrap;
@@ -546,7 +560,7 @@ body {
 		&-item {
 			max-width: 220px;
 			margin-right: 26px;
-			margin-top: 20px;
+			margin-top: 14px;
 			&__number {
 			margin: 0 auto;
 			width: 89px;
@@ -562,7 +576,7 @@ body {
 			line-height: 89px;
 			}
 			&__title {
-				margin-top: 18px;
+				margin-top: 16px;
 				color: #020202;
 				font-size: 18px;
 				font-weight: 400;
@@ -573,7 +587,7 @@ body {
 			}
 			&__text {
 				text-align: center;
-				margin-top: 12px;
+				margin-top: 10px;
 				color: #020202;
 				font-size: 14px;
 				font-weight: 300;
@@ -585,10 +599,10 @@ body {
 }
 .o-p__comment {
 	text-align: center;
-	margin-top: 68px;
-	font-size: 14px;
+	margin-top: 50px;
+	font-size: 12px;
 	font-weight: 300;
-	line-height: 14px;
+	line-height: 12px;
 	letter-spacing: 0.12px;
 }
 // ******** contacts start ***********
@@ -600,7 +614,7 @@ body {
 .contacts {
 	margin: 0 auto;
 	margin-top: 23px;
-	background: url(../img/контакты/подложка-под-раздел-КРУГ.png) center center no-repeat;
+	background: url(../img/контакты/подложка-под-раздел-КРУГ-min.png) center center no-repeat;
 	height: 892px;
 	width: 892px;
 	border: 3px solid #fcfafa;

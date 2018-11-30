@@ -84,7 +84,6 @@ hr:nth-of-type(1) {
 }
 .sidebar {
   float: right;
-  margin-top: 155px;
   margin-right: 58px;
   z-index: 5;
 }
@@ -105,6 +104,11 @@ hr:nth-of-type(1) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: red;
+}
+.sidebar .sidebar__img img:hover {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 .sidebar.fixed {
   position: fixed;
@@ -117,15 +121,28 @@ body {
   color: #040404;
   margin: 0px auto;
   max-width: 1920px;
-  background: url(../img/main-fon.png) top center no-repeat;
+}
+.paralax-effect {
+  height: 100%;
+  background: #808080 url(../img/main-fon-min.png) center center no-repeat;
 }
 #first {
+  margin: 0 auto;
   height: 942px;
 }
 .wrapper-main-menu {
   padding-top: 221px;
   position: relative;
   display: table;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.logo-gif {
+  position: absolute;
+  width: 191px;
+  height: 201px;
+  top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -159,40 +176,40 @@ body {
 .main-menu__contacts {
   left: -127px;
   top: 187px;
-  background: url(../img/main-menu/contacts.png) center center no-repeat;
+  background: url(../img/main-menu/contacts-min.png) center center no-repeat;
 }
 .main-menu__showcase {
   left: 141px;
   top: 33px;
-  background: url(../img/main-menu/vitrina.png) center center no-repeat;
+  background: url(../img/main-menu/vitrina-min.png) center center no-repeat;
 }
 .main-menu__about-us {
   left: 408px;
   top: 188px;
-  background: url(../img/main-menu/o-nas.png) center center no-repeat;
+  background: url(../img/main-menu/o-nas-min.png) center center no-repeat;
 }
 .main-menu__operating-procedure {
   left: -127px;
   top: 495px;
-  background: url(../img/main-menu/poryadok-raboti.png) center center no-repeat;
+  background: url(../img/main-menu/poryadok-raboti-min.png) center center no-repeat;
 }
 .main-menu__advantage {
   left: 141px;
   top: 649px;
-  background: url(../img/main-menu/preimushestva.png) center center no-repeat;
+  background: url(../img/main-menu/preimushestva-min.png) center center no-repeat;
 }
 .main-menu__portfolio {
   left: 408px;
   top: 496px;
-  background: url(../img/main-menu/portfolio.png) center center no-repeat;
+  background: url(../img/main-menu/portfolio-min.png) center center no-repeat;
 }
 #second {
-  background: url(../img/showcase/showcase-fon.png) center center no-repeat;
+  background: url(../img/showcase/showcase-fon-min.png) center center no-repeat;
   height: 944px;
 }
 .showcase {
   position: relative;
-  background: url(../img/showcase/all-fons.png) center center no-repeat;
+  background: url(../img/showcase/all-fons-min.png) center center no-repeat;
   width: 870px;
   height: 871px;
   padding-top: 37px;
@@ -278,60 +295,39 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
-.showcase__slider__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.333333%;
-          flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  text-align: center;
-}
 .showcase__slider__item img {
+  margin: 0 auto;
   border: 3px solid #98cfd3;
   border-radius: 50%;
   cursor: pointer;
 }
-.showcase__slider__control {
-  z-index: 99;
-  position: absolute;
-  top: 50%;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.showcase__navigation-prevArrow {
+  margin: auto 0;
   width: 23px;
   height: 23px;
-  text-align: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   cursor: pointer;
-}
-.showcase__slider__control_show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.showcase__slider__control_left {
-  left: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.showcase__slider__control_right {
-  right: 0;
+.showcase__navigation-nextArrow {
+  margin: auto 0;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
 }
 #third {
   height: 944px;
 }
 .about-us {
   position: relative;
-  background: url(../img/о-нас/фон.png) center center no-repeat;
+  background: url(../img/о-нас/фон-min.png) center center no-repeat;
   width: 892px;
   height: 892px;
   border: 3px solid #fcfafa;
@@ -490,12 +486,11 @@ body {
 }
 #fifth {
   height: 945px;
-  background-color: #a0d1d2;
   padding-top: 22px;
 }
 .advantages {
   position: relative;
-  background: url(../img/наши-преимущества/подложка-под-раздел-КРУГ.png) center center no-repeat;
+  background: url(../img/наши-преимущества/подложка-под-раздел-КРУГ-min.png) center center no-repeat;
   width: 892px;
   height: 892px;
   border: 3px solid #fcfafa;
@@ -790,13 +785,19 @@ body {
   }
 }
 #sixth {
-  background-color: #e3e6de;
+  margin: 0 auto;
+  background: url(../img/порядок-работы/подложка-раздела-min.png) center center no-repeat;
   height: 944px;
+  padding-top: 37px;
 }
 .o-p {
-  background: url(../img/порядок-работы/подложка-раздела.png) center center no-repeat;
-  height: 944px;
-  padding-top: 50px;
+  margin: 0 auto;
+  background-color: #e3e6de;
+  z-index: 1;
+  border-radius: 50%;
+  height: 870px;
+  width: 870px;
+  padding-top: 20px;
 }
 .o-p-title {
   text-align: center;
@@ -808,6 +809,8 @@ body {
 }
 .o-p__list {
   margin: 0 auto;
+  overflow: hidden;
+  z-index: 2;
   width: 870px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,7 +822,7 @@ body {
 .o-p__list-item {
   max-width: 220px;
   margin-right: 26px;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 .o-p__list-item__number {
   margin: 0 auto;
@@ -836,7 +839,7 @@ body {
   line-height: 89px;
 }
 .o-p__list-item__title {
-  margin-top: 18px;
+  margin-top: 16px;
   color: #020202;
   font-size: 18px;
   font-weight: 400;
@@ -847,7 +850,7 @@ body {
 }
 .o-p__list-item__text {
   text-align: center;
-  margin-top: 12px;
+  margin-top: 10px;
   color: #020202;
   font-size: 14px;
   font-weight: 300;
@@ -856,10 +859,10 @@ body {
 }
 .o-p__comment {
   text-align: center;
-  margin-top: 68px;
-  font-size: 14px;
+  margin-top: 50px;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 14px;
+  line-height: 12px;
   letter-spacing: 0.12px;
 }
 #seventh {
@@ -868,7 +871,7 @@ body {
 .contacts {
   margin: 0 auto;
   margin-top: 23px;
-  background: url(../img/контакты/подложка-под-раздел-КРУГ.png) center center no-repeat;
+  background: url(../img/контакты/подложка-под-раздел-КРУГ-min.png) center center no-repeat;
   height: 892px;
   width: 892px;
   border: 3px solid #fcfafa;
